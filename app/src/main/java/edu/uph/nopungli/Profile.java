@@ -6,18 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class Profile extends AppCompatActivity {
-    ImageButton backLogin;
+    TextView signout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        backLogin.findViewById(R.id.backLogin);
-        backLogin.setOnClickListener(new View.OnClickListener() {
+        signout.findViewById(R.id.signout);
+        signout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 Intent intent = new Intent(Profile.this, MainActivity.class);
                 startActivity(intent);
             }

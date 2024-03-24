@@ -61,6 +61,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="@color/black"
                     android:text="Nama"
                     android:textAlignment="center"
                     android:textSize="8pt"
@@ -71,6 +72,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="@color/black"
                     android:text="Verrel Angkasa"
                     android:textSize="7pt" />
             </LinearLayout>
@@ -89,6 +91,7 @@
                     android:layout_width="133dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="@color/black"
                     android:text="Email"
                     android:textAlignment="center"
                     android:textSize="8pt"
@@ -99,6 +102,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="@color/black"
                     android:text="verrelangkasa@email.com"
                     android:textSize="7pt" />
             </LinearLayout>
@@ -117,6 +121,7 @@
                     android:layout_width="71dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="@color/black"
                     android:text="Alamat"
                     android:textAlignment="center"
                     android:textSize="8pt"
@@ -127,6 +132,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="@color/black"
                     android:text="Jln. Jeruk No.10A"
                     android:textSize="7pt" />
             </LinearLayout>
@@ -145,6 +151,7 @@
                     android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="@color/black"
                     android:text="No. Telp"
                     android:textAlignment="center"
                     android:textSize="8pt"
@@ -155,6 +162,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="@color/black"
                     android:text="0813-4578-9513"
                     android:textSize="7pt" />
             </LinearLayout>
@@ -168,7 +176,7 @@
             android:background="@color/background">
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/signout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/red"
