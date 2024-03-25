@@ -1,14 +1,14 @@
 package edu.uph.nopungli.Model;
-public class DataTP {
+
+import io.realm.RealmObject;
+
+public class DataTP extends RealmObject {
     // atribut
     private String NamaJuru;
     private String DaerahJuru;
     private int gambarJuru;
 
-    public DataTP(String NamaJuru, String DaerahJuru, int gambarJuru) {
-        this.NamaJuru = NamaJuru;
-        this.DaerahJuru = DaerahJuru;
-        this.gambarJuru = gambarJuru;
+    public DataTP() {
     }
 
     public String getNamaJuru() {

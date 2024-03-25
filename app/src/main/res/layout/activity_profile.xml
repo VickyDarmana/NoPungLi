@@ -169,7 +169,9 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="51dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10pt"
+                android:layout_marginBottom="10pt"
                 android:orientation="horizontal">
 
                 <TextView
@@ -201,7 +203,7 @@
             android:orientation="vertical"
             android:background="@color/background">
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/signout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/red"
