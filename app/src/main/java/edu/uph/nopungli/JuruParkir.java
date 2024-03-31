@@ -16,7 +16,7 @@ import io.realm.RealmResults;
 
 public class JuruParkir extends AppCompatActivity {
 
-    ListView listview;
+    ListView listview2;
     ArrayList<DataTP> dataTPArrayList;
     private static TPAdapter adapter;
 
@@ -25,14 +25,14 @@ public class JuruParkir extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juru_parkir);
 
-        listview.findViewById(R.id.listview);
+        listview2 = (ListView) findViewById(R.id.listview2);
         dataTPArrayList = new ArrayList<>();
         dataTPArrayList = getAllDataTP();
 
         initRealm();
 
         adapter = new TPAdapter(dataTPArrayList, getApplicationContext());
-        listview.setAdapter(adapter);
+        listview2.setAdapter(adapter);
 
     }
 
