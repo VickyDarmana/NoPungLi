@@ -25,6 +25,8 @@
                 android:layout_marginLeft="12pt"
                 android:layout_marginTop="12pt"
                 android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textAlignment="center"
                 android:text="NoPungLi"
                 android:textSize="12pt" />
 
@@ -68,6 +70,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="85dp"
                         android:layout_weight="1"
+                        android:textColor="@color/black"
                         android:text="Verrel Angkasa" />
 
                     <LinearLayout
@@ -81,6 +84,7 @@
                             android:layout_width="171dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:textColor="@color/black"
                             android:text="Saldo" />
 
                         <TextView
@@ -88,7 +92,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="TextView" />
+                            android:textColor="@color/black"
+                            android:text="Rp 50,000" />
                     </LinearLayout>
 
                 </LinearLayout>

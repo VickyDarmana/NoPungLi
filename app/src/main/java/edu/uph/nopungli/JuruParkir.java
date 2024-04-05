@@ -25,11 +25,12 @@ public class JuruParkir extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juru_parkir);
 
+        initRealm();
+
+
         listview2 = (ListView) findViewById(R.id.listview2);
         dataTPArrayList = new ArrayList<>();
         dataTPArrayList = getAllDataTP();
-
-        initRealm();
 
         adapter = new TPAdapter(dataTPArrayList, getApplicationContext());
         listview2.setAdapter(adapter);
@@ -64,14 +65,11 @@ public class JuruParkir extends AppCompatActivity {
         Realm realm = Realm.getDefaultInstance();
 
         // Menyimpan Data
-        realm.executeTransaction(new Realm.Transaction() {
-            @Override
-            public void execute(Realm realm) {
-                DataTP dataTP = realm.createObject(DataTP.class);
-                dataTP.setNamaJuru(NamaJuru);
-                dataTP.setDaerahJuru(DaerahJuru);
-                dataTP.setGambarJuru(gambarJuru);
-            }
+        realm.executeTransaction(realm1 -> {
+            DataTP dataTP = realm1.createObject(DataTP.class);
+            dataTP.setNamaJuru(NamaJuru);
+            dataTP.setDaerahJuru(DaerahJuru);
+            dataTP.setGambarJuru(gambarJuru);
         });
 
         // Tutup koneksi ke database
@@ -80,7 +78,7 @@ public class JuruParkir extends AppCompatActivity {
 
     public ArrayList<DataTP> getAllDataTP() {
         Realm realm = Realm.getDefaultInstance();
-        RealmResults<DataTP> juru = realm.where(DataTP.class) .findAll();
+        RealmResults<DataTP> juru = realm.where(DataTP.class).findAll();
         ArrayList<DataTP> juruList = new ArrayList<>(juru);
         return juruList;
     }
