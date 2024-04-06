@@ -15,7 +15,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="212dp"
+            android:layout_height="240dp"
             android:orientation="vertical"
             tools:layout_editor_absoluteX="1dp"
             tools:layout_editor_absoluteY="1dp">
@@ -25,26 +25,35 @@
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textSize="15pt"
+                android:text="NoPungLi"
                 android:textAlignment="center"
-                android:text="NoPungLi" />
+                android:textColor="@color/black"
+                android:textSize="15pt" />
 
-            <EditText
+            <TextView
                 android:id="@+id/editTextText3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10pt"
+                android:background="@color/grey"
                 android:ems="10"
-                android:inputType="text"
-                android:hint="Nama Kota" />
+                android:padding="2pt"
+                android:text="Kota"
+                android:textColor="@color/black"
+                android:textSize="10pt"
+                />
 
-            <EditText
+            <TextView
                 android:id="@+id/editTextText4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10pt"
+                android:background="@color/grey"
                 android:ems="10"
-                android:inputType="text"
-                android:hint="Nama Kecamatan"/>
+                android:padding="2pt"
+                android:text="Kecamatan"
+                android:textColor="@color/black"
+                android:textSize="10pt" />
         </LinearLayout>
 
         <ListView
