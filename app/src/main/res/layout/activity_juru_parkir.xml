@@ -15,55 +15,63 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="240dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             tools:layout_editor_absoluteX="1dp"
             tools:layout_editor_absoluteY="1dp">
-
 
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/orange"
                 android:text="NoPungLi"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="15pt" />
+                android:textSize="16pt" />
 
             <TextView
                 android:id="@+id/editTextText3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10pt"
-                android:background="@color/grey"
+                android:layout_margin="8pt"
+                android:background="@drawable/shape"
+                android:backgroundTint="@color/orange"
                 android:ems="10"
-                android:padding="2pt"
+                android:padding="3pt"
                 android:text="Kota"
                 android:textColor="@color/black"
-                android:textSize="10pt"
-                />
+                android:textSize="9pt" />
 
             <TextView
                 android:id="@+id/editTextText4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10pt"
-                android:background="@color/grey"
+                android:layout_margin="8pt"
+                android:background="@drawable/shape"
+                android:backgroundTint="@color/orange"
                 android:ems="10"
-                android:padding="2pt"
+                android:padding="3pt"
                 android:text="Kecamatan"
                 android:textColor="@color/black"
-                android:textSize="10pt" />
+                android:textSize="9pt" />
+
         </LinearLayout>
 
-        <ListView
-            android:id="@+id/listview2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="222dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="222dp" />
+        </LinearLayout>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
