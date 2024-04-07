@@ -19,17 +19,12 @@ public class Home extends AppCompatActivity {
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
 
-            switch (item.getItemId()) {
-                case R.id.home:
-                    replaceFragment(new HomeFragment());
-                    break;
-                case R.id.pay:
-                    replaceFragment(new PayFragment());
-                    break;
-                case R.id.profile:
-                    replaceFragment(new ProfileFragment());
-                    break;
-
+            if (item.getItemId() == R.id.home) {
+                replaceFragment(new HomeFragment());
+            } else if (item.getItemId() == R.id.pay) {
+                replaceFragment(new PayFragment());
+            } else if (item.getItemId() == R.id.profile) {
+                replaceFragment(new ProfileFragment());
             }
             return true;
         });
