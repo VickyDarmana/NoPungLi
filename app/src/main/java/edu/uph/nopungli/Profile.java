@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class Profile extends AppCompatActivity {
     TextView signout;
+    ImageButton backProfile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +20,16 @@ public class Profile extends AppCompatActivity {
         signout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Profile.this, MainActivity.class);
+                Intent intent = new Intent(Profile.this, Login.class);
+                startActivity(intent);
+            }
+        });
+
+        backProfile.findViewById(R.id.backProfile);
+        backProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Profile.this, Home.class);
                 startActivity(intent);
             }
         });

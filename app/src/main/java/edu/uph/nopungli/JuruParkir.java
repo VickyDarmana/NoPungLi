@@ -50,15 +50,15 @@ public class JuruParkir extends AppCompatActivity {
         clearAllDataJuru();
 
         // Init Data
-        simpanDataJuru("Udin", "Anggur, Kec. Medan Timur", R.drawable.tp1);
-        simpanDataJuru("Andi", "Jeruk, Kec. Medan Barat", R.drawable.tp2);
-        simpanDataJuru("Tono", "Apel, Kec. Medan Perjuangan", R.drawable.tp3);
-        simpanDataJuru("Yanto", "Longan, Kec. Medan Kota", R.drawable.tp4);
+        simpanDataJuru("Udin", "Anggur, Kec. Medan Timur", R.drawable.juruparkir);
+        simpanDataJuru("Andi", "Jeruk, Kec. Medan Barat", R.drawable.juruparkir);
+        simpanDataJuru("Tono", "Apel, Kec. Medan Perjuangan", R.drawable.juruparkir);
+        simpanDataJuru("Yanto", "Longan, Kec. Medan Kota", R.drawable.juruparkir);
 
-        simpanDataJuru("Asep", "Durian, Kec. Medan Denai", R.drawable.tp5);
-        simpanDataJuru("Agus", "Salak, Kec. Medan Deli", R.drawable.tp6);
-        simpanDataJuru("Abeng", "Papaya, Kec. Medan Area", R.drawable.tp7);
-        simpanDataJuru("Jamal", "Pear, Kec. Medan Marelan", R.drawable.tp8);
+        simpanDataJuru("Asep", "Durian, Kec. Medan Denai", R.drawable.juruparkir);
+        simpanDataJuru("Agus", "Salak, Kec. Medan Deli", R.drawable.juruparkir);
+        simpanDataJuru("Abeng", "Papaya, Kec. Medan Area", R.drawable.juruparkir);
+        simpanDataJuru("Jamal", "Pear, Kec. Medan Marelan", R.drawable.juruparkir);
     }
 
     public void simpanDataJuru(String NamaJuru, String DaerahJuru, int gambarJuru) {
