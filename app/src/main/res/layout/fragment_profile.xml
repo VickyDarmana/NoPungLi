@@ -171,8 +171,6 @@
                     android:textSize="7pt" />
             </LinearLayout>
 
-<<<<<<< HEAD
-=======
             <Button
                 android:id="@+id/signout"
                 android:layout_width="match_parent"
@@ -183,7 +181,6 @@
                 android:textColor="@color/black"
                 android:textSize="10pt" />
 
->>>>>>> 056347febdd580b8952ba9704fc7bd2cad0e9c69
         </LinearLayout>
 
     </LinearLayout>
