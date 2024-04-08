@@ -84,15 +84,13 @@
                 android:textSize="8pt" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="6pt"
+                android:textSize="8pt"
                 android:backgroundTint="@color/green"
-                android:radius="10dp"
-                android:text="Login"
-                android:textColor="@color/black"
-                android:textSize="7pt" />
+                android:text="Login" />
 
             <LinearLayout
                 android:layout_width="match_parent"

@@ -23,6 +23,7 @@
         android:layout_marginLeft="10dp"
         android:textStyle="bold"
         android:textSize="18sp"
+        android:textColor="@color/black"
         android:text="Nama Juru Parkir"
         app:layout_constraintStart_toEndOf="@+id/gambarJuru"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -32,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-
+        android:textColor="@color/black"
         android:textSize="14sp"
         android:text="Daerah: "
         app:layout_constraintStart_toStartOf="@+id/txtNamaJuru"
