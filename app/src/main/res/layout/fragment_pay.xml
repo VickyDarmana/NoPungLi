@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/yellow"
+        android:background="@color/white"
         android:orientation="vertical">
 
         <LinearLayout
@@ -20,15 +20,15 @@
 
             <LinearLayout
                 android:layout_width="373dp"
-                android:layout_height="101dp"
+                android:layout_height="74dp"
                 android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/imageButton"
-                    android:layout_width="55dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="65dp"
+                    android:layout_height="62dp"
                     android:layout_weight="1"
-                    android:background="@color/yellow"
+                    android:background="@color/white"
                     android:src="@drawable/back" />
 
                 <ImageView
@@ -43,35 +43,67 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="189dp"
+            android:layout_height="176dp"
             android:background="@drawable/shape"
             android:backgroundTint="@color/orange"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="158dp"
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="5pt"
-                android:layout_marginRight="5pt"
+                android:layout_marginTop="5pt"
                 android:layout_weight="1"
-                android:backgroundTint="@color/yellow"
-                android:text="Input No. Tiket Parkir"
+                android:gravity="center"
+                android:text="Opsi Pembayaran Lain"
                 android:textColor="@color/black"
-                android:textSize="6pt" />
+                android:textSize="11pt"
+                android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="177dp"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="158dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginRight="5pt"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/yellow"
+                    android:text="Input No. Tiket Parkir"
+                    android:textColor="@color/black"
+                    android:textSize="6pt" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginRight="5pt"
+                    android:backgroundTint="@color/yellow"
+                    android:text="Upload Barcode"
+                    android:textColor="@color/black"
+                    android:textSize="6pt" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5pt"
-                android:layout_marginRight="5pt"
-                android:backgroundTint="@color/yellow"
-                android:text="Upload Barcode"
+                android:layout_weight="1"
                 android:textColor="@color/black"
-                android:textSize="6pt" />
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="3pt"
+                android:text="Supported by NoPungLi, Copyrights 2024" />
 
         </LinearLayout>
     </LinearLayout>
