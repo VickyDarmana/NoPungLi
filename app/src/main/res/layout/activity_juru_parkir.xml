@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@color/yellow"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
@@ -20,21 +21,20 @@
             tools:layout_editor_absoluteX="1dp"
             tools:layout_editor_absoluteY="1dp">
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/orange"
-                android:text="NoPungLi"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="16pt" />
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="69dp"
+                android:layout_height="72dp"
+                android:background="@color/yellow"
+                android:src="@drawable/back" />
 
             <TextView
                 android:id="@+id/editTextText3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8pt"
+                android:layout_marginTop="0pt"
+                android:layout_marginLeft="8pt"
+                android:layout_marginRight="8pt"
                 android:background="@drawable/shape"
                 android:backgroundTint="@color/orange"
                 android:ems="10"
@@ -70,6 +70,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
+                android:background="@color/orange"
                 tools:layout_editor_absoluteY="222dp" />
         </LinearLayout>
 

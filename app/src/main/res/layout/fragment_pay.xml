@@ -1,17 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".PayFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:layout_gravity="center"
-        android:text="Pay Fragment" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="561dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="373dp"
+                android:layout_height="101dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/yellow"
+                    android:src="@drawable/back" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="324dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/qris" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="189dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/orange"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="5pt"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:text="Input No. Tiket Parkir"
+                android:textColor="@color/black"
+                android:textSize="6pt" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="5pt"
+                android:backgroundTint="@color/yellow"
+                android:text="Upload Barcode"
+                android:textColor="@color/black"
+                android:textSize="6pt" />
+
+        </LinearLayout>
+    </LinearLayout>
 
 </FrameLayout>
