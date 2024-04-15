@@ -22,9 +22,7 @@ public class PayFragment extends Fragment {
         gotoHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new HomeFragment();
-                FragmentTransaction pf = getActivity().getSupportFragmentManager().beginTransaction();
-                pf.replace(R.id.container,fragment).commit();
+
             }
         });
         return view;

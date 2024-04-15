@@ -56,7 +56,8 @@
 
         <LinearLayout
             android:layout_width="318dp"
-            android:layout_height="277dp"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
             android:layout_marginLeft="20pt"
             android:layout_marginRight="20pt"
             android:background="@drawable/shape"
@@ -67,7 +68,16 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/edtTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5pt"
+                android:ems="10"
+                android:hint="Enter Your Name"
+                android:textSize="8pt" />
+
+            <EditText
+                android:id="@+id/edtTextEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5pt"
@@ -76,7 +86,7 @@
                 android:textSize="8pt" />
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/edtTextPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5pt"
@@ -88,6 +98,7 @@
                 android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:elevation="2dp"
                 android:layout_margin="6pt"
                 android:textSize="8pt"
                 android:backgroundTint="@color/green"
@@ -96,7 +107,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
-                android:layout_marginTop="10pt"
+                android:layout_marginTop="5pt"
                 android:orientation="horizontal">
 
                 <TextView
@@ -130,7 +141,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="79dp"
-            android:layout_marginTop="40pt"
+            android:layout_marginTop="15pt"
             android:orientation="vertical">
 
             <TextView
@@ -151,7 +162,9 @@
                 android:text="Copyrights 2024"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
+
         </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
