@@ -19,22 +19,22 @@ import android.widget.Button;
 import java.util.Objects;
 
 public class ProfileFragment extends Fragment {
-    Button signout;
+    Button gotoLogin;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
-        signout = view.findViewById(R.id.signout);
-        signout.setOnClickListener(new View.OnClickListener() {
+        gotoLogin.findViewById(R.id.btnSignout);
+        gotoLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment homeFrag = new HomeFragment();
-                FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
-                fm.replace(R.id.container,homeFrag).commit();
+                Intent intent = new Intent(getActivity(), Login.class);
+                startActivity(intent);
             }
         });
+
         return view;
     }
 }
