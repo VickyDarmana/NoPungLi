@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +18,6 @@ public class Login extends AppCompatActivity {
     Button btnLogin;
     @Required
     EditText editTextName;
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,9 +29,9 @@ public class Login extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment = new HomeFragment();
-                FragmentTransaction homeFrag = getSupportFragmentManager().beginTransaction();
-                homeFrag.replace(R.id.container,fragment).commit();
+                // pindah ke home dulu
+                Intent intent = new Intent(Login.this, Home.class);
+                startActivity(intent);
 
                 showToast();
             };

@@ -22,7 +22,7 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        gotoMap.findViewById(R.id.imgMap);
+        gotoMap = (ImageButton) view.findViewById(R.id.imgMap);
         gotoMap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,7 +31,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        gotoJuru.findViewById(R.id.imgJuru);
+        gotoJuru  = (ImageButton)  view.findViewById(R.id.imgJuru);
         gotoJuru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,7 +40,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        gotoInbox.findViewById(R.id.imgInbox);
+        gotoInbox  = (ImageButton)  view.findViewById(R.id.imgInbox);
         gotoInbox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
