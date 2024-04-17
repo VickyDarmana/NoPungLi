@@ -33,7 +33,7 @@ public class Home extends AppCompatActivity {
     private void replaceFragment (Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.linear_layout,fragment);
+        fragmentTransaction.replace(R.id.container,fragment);
         fragmentTransaction.commit();
     }
 

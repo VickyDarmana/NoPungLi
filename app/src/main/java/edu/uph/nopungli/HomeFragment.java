@@ -31,6 +31,24 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        gotoJuru.findViewById(R.id.imgJuru);
+        gotoJuru.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), JuruParkir.class);
+                startActivity(intent);
+            }
+        });
+
+        gotoInbox.findViewById(R.id.imgInbox);
+        gotoInbox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Inbox.class);
+                startActivity(intent);
+            }
+        });
+
         return view;
     }
 }
