@@ -39,6 +39,7 @@
                 android:text="History"
                 android:textColor="@color/black"
                 android:textSize="13pt"
+                android:elevation="3dp"
                 android:textStyle="bold" />
 
         </LinearLayout>

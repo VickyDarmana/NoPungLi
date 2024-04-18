@@ -72,6 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5pt"
                 android:ems="10"
+                android:inputType="textPersonName"
                 android:hint="Enter Your Name"
                 android:textSize="8pt" />
 
@@ -81,6 +82,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5pt"
                 android:ems="10"
+                android:inputType="textEmailAddress"
                 android:hint="Enter Your Email"
                 android:textSize="8pt" />
 
@@ -90,6 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5pt"
                 android:ems="10"
+                android:inputType="textPassword"
                 android:hint="Enter Your Password"
                 android:textSize="8pt" />
 

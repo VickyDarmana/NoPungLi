@@ -13,6 +13,12 @@
         android:theme="@style/Theme.NoPungLi"
         tools:targetApi="31">
         <activity
+            android:name=".Topup1"
+            android:exported="false" />
+        <activity
+            android:name=".topup1"
+            android:exported="false" />
+        <activity
             android:name=".Report"
             android:exported="false" />
         <activity

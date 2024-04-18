@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/yellow"
-    tools:context=".Topup">
+    tools:context=".Topup1">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="391dp"
+        android:layout_height="805dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
@@ -38,6 +38,7 @@
                 android:text="Top Up"
                 android:textColor="@color/black"
                 android:textSize="13pt"
+                android:elevation="3dp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -88,7 +89,8 @@
                 android:textSize="12pt"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:text="Pilih Metode Top Up" />
+                android:text="Bank ABC" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -120,92 +122,101 @@
                 android:gravity="fill_vertical"
                 android:text="Bank ABC" />
 
-            <ImageView
-                android:id="@+id/imageView4"
+            <TextView
+                android:id="@+id/textView43"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_gravity="center_vertical"
-                app:srcCompat="@drawable/forward" />
+                android:textColor="@color/black"
+                android:textSize="6pt"
+                android:gravity="fill_vertical"
+                android:text="a.n Verrel Ang****" />
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:background="@drawable/shape"
             android:backgroundTint="@color/orange"
-            android:layout_marginLeft="8pt"
-            android:layout_marginRight="8pt"
-            android:layout_marginBottom="8pt"
-            android:elevation="2dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/imageView99"
-                android:layout_width="11dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_gravity="center_vertical"
-                app:srcCompat="@drawable/phone" />
+            android:layout_marginTop="10pt"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="3pt"
+            android:elevation="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
             <TextView
-                android:id="@+id/textView110"
-                android:layout_width="78dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="fill_vertical"
-                android:text="Internet / Mobile Banking"
+                android:id="@+id/textView50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:textColor="@color/black"
-                android:textSize="8pt" />
+                android:textSize="12pt"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Nominal Top Up" />
 
-            <ImageView
-                android:id="@+id/imageView75"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:layout_gravity="center_vertical"
-                app:srcCompat="@drawable/forward" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
+            android:layout_height="wrap_content"
             android:background="@drawable/shape"
             android:backgroundTint="@color/orange"
-            android:layout_marginLeft="8pt"
-            android:layout_marginRight="8pt"
+            android:layout_margin="8pt"
             android:elevation="2dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/imageView98"
-                android:layout_width="11dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_gravity="center_vertical"
-                app:srcCompat="@drawable/atm" />
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView111"
-                android:layout_width="79dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="fill_vertical"
-                android:text="ATM"
+                android:id="@+id/textView51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:textColor="@color/black"
-                android:textSize="8pt" />
+                android:textSize="7pt"
+                android:layout_marginTop="6pt"
+                android:layout_marginRight="6pt"
+                android:layout_marginLeft="6pt"
+                android:text="Masukkan nominal top up:" />
 
-            <ImageView
-                android:id="@+id/imageView74"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:layout_gravity="center_vertical"
-                app:srcCompat="@drawable/forward" />
+            <EditText
+                android:id="@+id/editTextText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="9pt"
+                android:textColor="@color/black"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="5pt"
+                android:layout_marginBottom="5pt"
+                android:hint="Minimal Rp10.000" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="169dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/orange"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnTopUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10pt"
+                android:layout_marginLeft="7pt"
+                android:layout_marginRight="7pt"
+                android:backgroundTint="@color/yellow"
+                android:text="Top Up Sekarang"
+                android:textColor="@color/black"
+                android:textSize="10pt"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
