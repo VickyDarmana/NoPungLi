@@ -20,7 +20,7 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/btnBackJP"
+                android:id="@+id/btnBekHome"
                 android:layout_width="65dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -39,31 +39,43 @@
                 android:textColor="@color/black"
                 android:textSize="13pt"
                 android:textStyle="bold" />
-
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8pt"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView46"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="Saldo NoPungLi:" />
 
             <TextView
                 android:id="@+id/textView47"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:textSize="8pt"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="Rp 50.000" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="66dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/orange"
+            android:layout_marginTop="10pt"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="3pt"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
@@ -71,29 +83,48 @@
                 android:id="@+id/textView48"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:textColor="@color/black"
+                android:textSize="12pt"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Pilih Metode Topup" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:orientation="horizontal"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/orange"
+            android:layout_margin="8pt"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
+                android:layout_width="11dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_gravity="center_vertical"
                 app:srcCompat="@drawable/card" />
 
             <TextView
                 android:id="@+id/textView49"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:textColor="@color/black"
+                android:textSize="8pt"
+                android:gravity="fill_vertical"
+                android:text="Bank ABC" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/forward" />
         </LinearLayout>
 
     </LinearLayout>
