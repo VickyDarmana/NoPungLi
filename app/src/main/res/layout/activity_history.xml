@@ -8,12 +8,12 @@
     tools:context=".History">
 
     <LinearLayout
-        android:layout_width="391dp"
-        android:layout_height="805dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="1dp" >
+        tools:layout_editor_absoluteY="-4dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,8 +27,8 @@
                 android:layout_marginTop="10pt"
                 android:text="History"
                 android:textAlignment="center"
-                android:textSize="13pt"
                 android:textColor="@color/black"
+                android:textSize="13pt"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -44,51 +44,264 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2pt"
                 android:background="@color/orange"
-                android:textColor="@color/black"
                 android:paddingLeft="5pt"
                 android:text="6 April 2024"
+                android:textColor="@color/black"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView19"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5pt"
-                android:layout_marginRight="5pt"
-                android:layout_marginTop="4pt"
-                android:textColor="@color/black"
-                android:text="Pelaporan anda pada tanggal 4 April 2024 berhasil, juru parkir liar sudah ditangkap dan sedang diproses" />
+        </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView20"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5pt"
-                android:layout_marginTop="4pt"
-                android:layout_marginRight="5pt"
-                android:textColor="@color/black"
-                android:text="Anda berhasil melakukan Top up sebesar Rp 20.000 melalui BCA" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textView21"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="177dp"
+                android:layout_marginTop="1pt"
                 android:layout_marginLeft="5pt"
-                android:layout_marginTop="4pt"
-                android:layout_marginRight="5pt"
-                android:textColor="@color/black"
-                android:text="Pembayaran uang parkir di daerah Medan Kota sebesar Rp 5.000 telah dipotong " />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Pembayaran uang parkir (Medan Kota)" />
 
             <TextView
                 android:id="@+id/textView22"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="55pt"
+                android:layout_marginTop="4pt"
+                android:text="-Rp.3.000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="177dp"
                 android:layout_marginLeft="5pt"
                 android:layout_marginTop="4pt"
-                android:layout_marginRight="5pt"
-                android:textColor="@color/black"
-                android:text="Pembayaran uang parkir di daerah Medan Denai sebesar Rp 3.000 telah dipotong " />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Top up dari Bank BCA" />
 
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4pt"
+                android:layout_weight="1"
+                android:layout_marginLeft="51pt"
+                android:text="+Rp.30.000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="177dp"
+                android:layout_marginLeft="5pt"
+                android:layout_marginTop="1pt"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Pembayaran uang parkir (Medan Denai)" />
+
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="4pt"
+                android:layout_marginLeft="55pt"
+                android:text="-Rp.3.000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2pt"
+                android:background="@color/orange"
+                android:paddingLeft="5pt"
+                android:text="6 April 2024"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="174dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1pt"
+                android:layout_marginLeft="5pt"
+                android:layout_weight="1"
+                android:text="Pembayaran uang parkir (Medan Area)" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="4pt"
+                android:layout_marginLeft="55pt"
+                android:text="-Rp.3.000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="174dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1pt"
+                android:layout_marginLeft="5pt"
+                android:layout_weight="1"
+                android:text="Pembayaran uang parkir (Medan Marelan)" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="4pt"
+                android:layout_marginLeft="55pt"
+                android:text="-Rp.3.000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="174dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1pt"
+                android:layout_marginLeft="5pt"
+                android:layout_weight="1"
+                android:text="Pembayaran uang parkir (Medan Perjuangan)" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="4pt"
+                android:layout_marginLeft="55pt"
+                android:text="-Rp.3.000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2pt"
+                android:background="@color/orange"
+                android:paddingLeft="5pt"
+                android:text="6 April 2024"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="174dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5pt"
+                android:layout_marginTop="1pt"
+                android:layout_weight="1"
+                android:text="Pembayaran uang parkir (Medan Perjuangan)" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="4pt"
+                android:layout_marginLeft="55pt"
+                android:text="-Rp.3.000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="174dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5pt"
+                android:layout_marginTop="1pt"
+                android:layout_weight="1"
+                android:text="Pembayaran uang parkir (Medan Kota)" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="4pt"
+                android:layout_marginLeft="55pt"
+                android:text="-Rp.3.000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="174dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4pt"
+                android:layout_marginLeft="5pt"
+                android:layout_weight="1"
+                android:text="Top Up dari Bank BCA" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="4pt"
+                android:layout_marginLeft="51pt"
+                android:text="+Rp.30.000" />
         </LinearLayout>
 
     </LinearLayout>

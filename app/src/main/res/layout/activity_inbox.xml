@@ -66,27 +66,9 @@
                 android:layout_marginTop="4pt"
                 android:layout_marginRight="5pt"
                 android:textColor="@color/black"
-                android:text="Anda berhasil melakukan Top up sebesar Rp 20.000 melalui BCA" />
+                android:text="Pelaporan sedang dalam proses investigasi" />
 
-            <TextView
-                android:id="@+id/textView21"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5pt"
-                android:layout_marginTop="4pt"
-                android:layout_marginRight="5pt"
-                android:textColor="@color/black"
-                android:text="Pembayaran uang parkir di daerah Medan Kota sebesar Rp 5.000 telah dipotong " />
 
-            <TextView
-                android:id="@+id/textView22"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5pt"
-                android:layout_marginTop="4pt"
-                android:layout_marginRight="5pt"
-                android:textColor="@color/black"
-                android:text="Pembayaran uang parkir di daerah Medan Denai sebesar Rp 3.000 telah dipotong " />
 
         </LinearLayout>
 
@@ -114,7 +96,7 @@
                 android:layout_marginTop="4pt"
                 android:layout_marginRight="5pt"
                 android:textColor="@color/black"
-                android:text="Pelaporan anda pada tanggal 4 April 2024 sedang kami proses" />
+                android:text="Pelaporan anda pada tanggal 4 April 2024 sedang diproses" />
 
             <TextView
                 android:id="@+id/textView25"
@@ -124,17 +106,8 @@
                 android:layout_marginTop="4pt"
                 android:layout_marginRight="5pt"
                 android:textColor="@color/black"
-                android:text="Pembayaran uang parkir di daerah Medan Polonia sebesar Rp5.000 telah dipotong " />
+                android:text="Pelaporan juru parkir telah dilihat" />
 
-            <TextView
-                android:id="@+id/textView26"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5pt"
-                android:layout_marginTop="4pt"
-                android:layout_marginRight="5pt"
-                android:textColor="@color/black"
-                android:text="Pembayaran uang parkir di daerah Medan Kota sebesar Rp 5.000 telah dipotong " />
 
         </LinearLayout>
 
@@ -162,7 +135,7 @@
                 android:layout_marginRight="5pt"
                 android:layout_marginTop="4pt"
                 android:textColor="@color/black"
-                android:text="Pelaporan terhadap juru parkir berhasil" />
+                android:text="Foto pelaporan berhasil di upload" />
 
             <TextView
                 android:id="@+id/textView29"
@@ -172,27 +145,8 @@
                 android:layout_marginRight="5pt"
                 android:layout_marginTop="4pt"
                 android:textColor="@color/black"
-                android:text="Anda berhasil melakukan Top up sebesar Rp 30.000 melalui BCA" />
+                android:text="Pelaporan terhadap juru parkir berhasil" />
 
-            <TextView
-                android:id="@+id/textView30"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5pt"
-                android:layout_marginRight="5pt"
-                android:layout_marginTop="4pt"
-                android:textColor="@color/black"
-                android:text="Pembayaran uang parkir di daerah Medan Kota sebesar Rp 5.000 telah dipotong " />
-
-            <TextView
-                android:id="@+id/textView31"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5pt"
-                android:layout_marginRight="5pt"
-                android:layout_marginTop="4pt"
-                android:textColor="@color/black"
-                android:text="Pembayaran uang parkir di daerah Medan Polonia sebesar Rp 5.000 telah dipotong " />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
