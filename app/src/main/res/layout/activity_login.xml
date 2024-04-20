@@ -103,7 +103,8 @@
                 android:elevation="2dp"
                 android:layout_margin="6pt"
                 android:textSize="8pt"
-                android:backgroundTint="@color/green"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
                 android:text="Login" />
 
             <LinearLayout
@@ -161,7 +162,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="Copyrights 2024"
+                android:text="Copyright 2024"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 

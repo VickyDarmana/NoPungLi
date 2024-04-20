@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NoPungLi"
-        tools:targetApi="31">
+        tools:targetApi="28">
+        <activity
+            android:name=".Transfer1"
+            android:exported="false" />
         <activity
             android:name=".Topup1"
             android:exported="false" />

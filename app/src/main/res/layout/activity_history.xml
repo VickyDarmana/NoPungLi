@@ -17,16 +17,26 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="111dp"
             android:orientation="vertical">
 
+            <ImageButton
+                android:id="@+id/btnBekHistory"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/yellow"
+                android:src="@drawable/back" />
+
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/textView15"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10pt"
+                android:layout_height="84dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:gravity="center"
                 android:text="History"
-                android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="13pt"
                 android:textStyle="bold" />
@@ -58,7 +68,7 @@
 
             <TextView
                 android:id="@+id/textView21"
-                android:layout_width="177dp"
+                android:layout_width="170dp"
                 android:layout_marginTop="1pt"
                 android:layout_marginLeft="5pt"
                 android:layout_height="match_parent"
@@ -70,7 +80,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_marginLeft="55pt"
+                android:layout_marginLeft="51pt"
                 android:layout_marginTop="4pt"
                 android:textColor="@color/red"
                 android:text="-Rp.3.000" />
@@ -83,7 +93,7 @@
 
             <TextView
                 android:id="@+id/textView23"
-                android:layout_width="177dp"
+                android:layout_width="170dp"
                 android:layout_marginLeft="5pt"
                 android:layout_marginTop="4pt"
                 android:layout_height="match_parent"
@@ -115,14 +125,13 @@
                 android:layout_weight="1"
                 android:text="Pembayaran uang parkir (Medan Denai)" />
 
-
             <TextView
                 android:id="@+id/textView26"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_marginTop="4pt"
-                android:layout_marginLeft="55pt"
+                android:layout_marginLeft="51pt"
                 android:textColor="@color/red"
                 android:text="-Rp.3.000" />
         </LinearLayout>
@@ -152,12 +161,13 @@
 
             <TextView
                 android:id="@+id/textView28"
-                android:layout_width="174dp"
+                android:layout_width="170dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="1pt"
                 android:layout_marginLeft="5pt"
                 android:layout_weight="1"
-                android:text="Pembayaran uang parkir (Medan Area)" />
+                android:gravity="fill_vertical"
+                android:text="Transfer dari Jason" />
 
             <TextView
                 android:id="@+id/textView29"
@@ -165,9 +175,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_marginTop="4pt"
-                android:layout_marginLeft="55pt"
-                android:textColor="@color/red"
-                android:text="-Rp.3.000" />
+                android:layout_marginLeft="51pt"
+                android:textColor="@color/green"
+                android:text="+Rp.50.000" />
         </LinearLayout>
 
         <LinearLayout
@@ -177,12 +187,13 @@
 
             <TextView
                 android:id="@+id/textView30"
-                android:layout_width="174dp"
+                android:layout_width="170dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="1pt"
                 android:layout_marginLeft="5pt"
                 android:layout_weight="1"
-                android:text="Pembayaran uang parkir (Medan Marelan)" />
+                android:gravity="fill_vertical"
+                android:text="Transfer ke Vicky Darmana" />
 
             <TextView
                 android:id="@+id/textView31"
@@ -190,9 +201,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_marginTop="4pt"
-                android:layout_marginLeft="55pt"
+                android:layout_marginLeft="51pt"
                 android:textColor="@color/red"
-                android:text="-Rp.3.000" />
+                android:text="-Rp.30.000" />
         </LinearLayout>
 
         <LinearLayout
@@ -202,7 +213,7 @@
 
             <TextView
                 android:id="@+id/textView32"
-                android:layout_width="174dp"
+                android:layout_width="170dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="1pt"
                 android:layout_marginLeft="5pt"
@@ -215,7 +226,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_marginTop="4pt"
-                android:layout_marginLeft="55pt"
+                android:layout_marginLeft="51pt"
                 android:textColor="@color/red"
                 android:text="-Rp.3.000" />
         </LinearLayout>
@@ -258,7 +269,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_marginTop="4pt"
-                android:layout_marginLeft="55pt"
+                android:layout_marginLeft="51pt"
                 android:textColor="@color/red"
                 android:text="-Rp.3.000" />
         </LinearLayout>
@@ -283,7 +294,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_marginTop="4pt"
-                android:layout_marginLeft="55pt"
+                android:layout_marginLeft="51pt"
                 android:textColor="@color/red"
                 android:text="-Rp.3.000" />
         </LinearLayout>

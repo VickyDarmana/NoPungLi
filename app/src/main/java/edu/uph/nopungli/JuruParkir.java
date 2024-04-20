@@ -2,7 +2,11 @@ package edu.uph.nopungli;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -15,15 +19,25 @@ import io.realm.RealmResults;
 
 
 public class JuruParkir extends AppCompatActivity {
-
+    ImageButton gotoHome;
     ListView listview2;
     ArrayList<DataTP> dataTPArrayList;
     private static TPAdapter adapter;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juru_parkir);
+
+        gotoHome = findViewById(R.id.btnBackJuru);
+        gotoHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JuruParkir.this, Home.class);
+                startActivity(intent);
+            }
+        });
 
         initRealm();
 
@@ -58,7 +72,7 @@ public class JuruParkir extends AppCompatActivity {
         simpanDataJuru("Asep", "Durian, Kec. Medan Denai", R.drawable.juruparkir);
         simpanDataJuru("Agus", "Salak, Kec. Medan Deli", R.drawable.juruparkir);
         simpanDataJuru("Abeng", "Papaya, Kec. Medan Area", R.drawable.juruparkir);
-        simpanDataJuru("Jamal", "Pear, Kec. Medan Marelan", R.drawable.juruparkir);
+        simpanDataJuru("Jamal", "Pear, Kec. Medan Kota", R.drawable.juruparkir);
     }
 
     public void simpanDataJuru(String NamaJuru, String DaerahJuru, int gambarJuru) {
