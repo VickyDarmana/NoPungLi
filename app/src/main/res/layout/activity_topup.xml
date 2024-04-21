@@ -106,6 +106,7 @@
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="11dp"
+                android:layout_marginLeft="10pt"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_gravity="center_vertical"
@@ -117,15 +118,17 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/black"
+                android:layout_marginLeft="9pt"
                 android:textSize="8pt"
                 android:gravity="fill_vertical"
-                android:text="Bank ABC" />
+                android:text="Kartu Kredit/Debit" />
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_weight="1"
+                android:layout_marginRight="10pt"
                 android:layout_gravity="center_vertical"
                 app:srcCompat="@drawable/forward" />
         </LinearLayout>
