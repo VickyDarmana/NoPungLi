@@ -21,7 +21,7 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/btnBackJP"
+                android:id="@+id/btnBackProfile"
                 android:layout_width="65dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -36,7 +36,7 @@
                 android:layout_weight="1"
                 android:background="@color/orange"
                 android:gravity="center"
-                android:text="Top Up"
+                android:text="Profile"
                 android:textColor="@color/black"
                 android:textSize="13pt"
                 android:textStyle="bold" />
@@ -110,33 +110,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10pt"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView14"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="NIK"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="8pt"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="1270122321341"
-                    android:textColor="@color/black"
-                    android:textSize="7pt" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10pt"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
@@ -160,6 +133,7 @@
                     android:text="verrelangkasa@email.com"
                     android:textColor="@color/black"
                     android:textSize="7pt" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -187,6 +161,33 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Jln. Jeruk No.10A"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10pt"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NIK"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1270122321341"
                     android:textColor="@color/black"
                     android:textSize="7pt" />
             </LinearLayout>

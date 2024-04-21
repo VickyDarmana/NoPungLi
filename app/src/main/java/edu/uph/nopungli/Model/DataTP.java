@@ -3,10 +3,10 @@ package edu.uph.nopungli.Model;
 import io.realm.RealmObject;
 
 public class DataTP extends RealmObject {
-    // atribut
     private String NamaJuru;
     private String DaerahJuru;
     private int gambarJuru;
+    private String DesJuru;
 
     public DataTP() {
     }
@@ -33,5 +33,13 @@ public class DataTP extends RealmObject {
 
     public void setGambarJuru(int gambarJuru) {
         this.gambarJuru = gambarJuru;
+    }
+
+    public String getDesJuru() {
+        return DesJuru;
+    }
+
+    public void setDesJuru(String desJuru) {
+        DesJuru = desJuru;
     }
 }

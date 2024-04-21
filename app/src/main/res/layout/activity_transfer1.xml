@@ -100,7 +100,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textColor="@color/black"
-                    android:textSize="9pt"
+                    android:textSize="8pt"
                     android:layout_marginLeft="5pt"
                     android:gravity="center"
                     android:text="+62" />
@@ -115,7 +115,7 @@
                     android:hint=""
                     android:inputType="number"
                     android:textColor="@color/black"
-                    android:textSize="9pt" />
+                    android:textSize="8pt" />
             </LinearLayout>
         </LinearLayout>
 
@@ -145,12 +145,13 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="number"
-                android:textSize="9pt"
+                android:textSize="8pt"
                 android:textColor="@color/black"
                 android:layout_marginLeft="5pt"
                 android:layout_marginRight="5pt"
                 android:layout_marginBottom="5pt"
                 android:hint="Minimal Rp10.000" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -168,8 +169,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="number"
-                android:textSize="7pt"
+                android:inputType="text"
+                android:textSize="8pt"
                 android:textColor="@color/black"
                 android:layout_margin="5pt"
                 android:hint="Pesan" />
@@ -177,7 +178,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="195dp" />
+            android:layout_height="120dp" />
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -1,5 +1,6 @@
 package edu.uph.nopungli;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -15,11 +16,14 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import java.util.Objects;
 
 public class ProfileFragment extends Fragment {
     Button gotoLogin;
+    ImageButton gotoHome;
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -32,6 +36,16 @@ public class ProfileFragment extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), Login.class);
                 startActivity(intent);
+            }
+        });
+
+        gotoHome = (ImageButton) view.findViewById(R.id.btnBackProfile);
+        gotoHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment proFrag = new HomeFragment();
+                FragmentTransaction pf = getActivity().getSupportFragmentManager().beginTransaction();
+                pf.replace(R.id.container,proFrag).commit();
             }
         });
 

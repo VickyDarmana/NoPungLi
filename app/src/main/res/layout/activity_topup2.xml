@@ -28,7 +28,7 @@
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/group_87_3" />
+                app:srcCompat="@drawable/sucessful" />
         </LinearLayout>
 
         <LinearLayout
@@ -53,7 +53,8 @@
                 android:layout_height="wrap_content"
                 android:text="10 April 2024, 10.30 PM"
                 android:textAlignment="center"
-                android:textSize="7pt" />
+                android:textSize="7pt"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/textView59"
@@ -61,7 +62,8 @@
                 android:layout_height="wrap_content"
                 android:text="Transaction ID: 21w329158d21i21f4v435d"
                 android:textAlignment="center"
-                android:textSize="7pt" />
+                android:textSize="7pt"
+                android:textColor="@color/black"/>
         </LinearLayout>
 
         <LinearLayout
@@ -77,7 +79,8 @@
                 android:layout_weight="1"
                 android:text="Top Up Amount:"
                 android:textSize="8pt"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/textView61"
@@ -87,7 +90,8 @@
                 android:layout_weight="1"
                 android:text="Rp.30.000"
                 android:textSize="8pt"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -105,17 +109,19 @@
                 android:layout_weight="1"
                 android:text="Current Balance:"
                 android:textSize="8pt"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/textView65"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="57pt"
+                android:layout_marginLeft="58pt"
                 android:layout_weight="1"
                 android:text="Rp.40.000"
                 android:textSize="8pt"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
         </LinearLayout>
 
         <LinearLayout
@@ -131,7 +137,8 @@
                 android:layout_weight="1"
                 android:text="Payment Method:"
                 android:textSize="8pt"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/textView63"
@@ -141,7 +148,8 @@
                 android:layout_weight="1"
                 android:text="M-Banking"
                 android:textSize="8pt"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
         </LinearLayout>
 
         <LinearLayout
@@ -150,12 +158,13 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/btnTopupDone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15pt"
                 android:layout_marginRight="15pt"
                 android:backgroundTint="@color/green"
+                android:elevation="5dp"
                 android:text="Done"
                 android:textSize="10pt" />
         </LinearLayout>

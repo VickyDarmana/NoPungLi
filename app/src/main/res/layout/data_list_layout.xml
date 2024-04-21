@@ -39,4 +39,15 @@
         app:layout_constraintStart_toStartOf="@+id/txtNamaJuru"
         app:layout_constraintTop_toBottomOf="@+id/txtNamaJuru"/>
 
+    <TextView
+        android:id="@+id/txtDeskripsiJuru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="Deskripsi: "
+        app:layout_constraintStart_toStartOf="@+id/txtDaerahJuru"
+        app:layout_constraintTop_toBottomOf="@+id/txtDaerahJuru"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

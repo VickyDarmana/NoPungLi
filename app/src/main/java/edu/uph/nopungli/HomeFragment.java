@@ -1,20 +1,25 @@
 package edu.uph.nopungli;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class HomeFragment extends Fragment {
-    ImageButton gotoInbox, gotoTopup, gotoTransfer, gotoJuru, gotoMap, gotoHistory;
+    ImageButton gotoInbox, gotoTopup, gotoTransfer, gotoJuru, gotoMap, gotoHistory, gotoResult;
     FloatingActionButton gotoReport;
+    LinearLayout gotoProfile;
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -43,7 +48,7 @@ public class HomeFragment extends Fragment {
         gotoInbox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), Inbox.class);
+                Intent intent = new Intent(getActivity(), Notif.class);
                 startActivity(intent);
             }
         });
@@ -81,6 +86,25 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), Report.class);
                 startActivity(intent);
+            }
+        });
+
+        gotoResult = (ImageButton) view.findViewById(R.id.imgResult);
+        gotoResult.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Result.class);
+                startActivity(intent);
+            }
+        });
+
+        gotoProfile = (LinearLayout) view.findViewById(R.id.btnProfile);
+        gotoProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment proFrag = new ProfileFragment();
+                FragmentTransaction pf = getActivity().getSupportFragmentManager().beginTransaction();
+                pf.replace(R.id.container, proFrag).commit();
             }
         });
 

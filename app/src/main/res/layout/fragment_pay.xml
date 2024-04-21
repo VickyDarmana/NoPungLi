@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/yellow"
     tools:context=".PayFragment">
 
@@ -15,7 +15,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="561dp"
+            android:layout_height="500dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -33,7 +33,7 @@
 
                 <ImageView
                     android:id="@+id/imageView6"
-                    android:layout_width="324dp"
+                    android:layout_width="336dp"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
                     android:src="@drawable/qris" />
@@ -43,7 +43,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@drawable/shape"
             android:backgroundTint="@color/orange"
             android:orientation="vertical">
@@ -103,7 +103,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:layout_marginBottom="3pt"
-                android:text="Supported by NoPungLi, Copyrights 2024" />
+                android:text="Supported by NoPungLi, Copyright 2024" />
 
         </LinearLayout>
     </LinearLayout>

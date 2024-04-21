@@ -53,11 +53,11 @@
                 android:backgroundTint="@color/orange"
                 android:ems="10"
                 android:padding="3pt"
-                android:text="Kota"
+                android:text="Kota Medan"
                 android:textColor="@color/black"
                 android:textSize="9pt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/editTextText4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
                 android:backgroundTint="@color/orange"
                 android:ems="10"
                 android:padding="3pt"
-                android:text="Kecamatan"
+                android:hint="Kecamatan"
                 android:textColor="@color/black"
                 android:textSize="9pt" />
 
@@ -79,7 +79,7 @@
 
             <ListView
                 android:id="@+id/listview2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"

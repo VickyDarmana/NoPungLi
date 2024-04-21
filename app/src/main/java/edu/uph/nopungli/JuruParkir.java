@@ -64,18 +64,18 @@ public class JuruParkir extends AppCompatActivity {
         clearAllDataJuru();
 
         // Init Data
-        simpanDataJuru("Udin", "Anggur, Kec. Medan Timur", R.drawable.juruparkir);
-        simpanDataJuru("Andi", "Jeruk, Kec. Medan Barat", R.drawable.juruparkir);
-        simpanDataJuru("Tono", "Apel, Kec. Medan Perjuangan", R.drawable.juruparkir);
-        simpanDataJuru("Yanto", "Longan, Kec. Medan Kota", R.drawable.juruparkir);
+        simpanDataJuru("Udin", "Anggur, Kec. Medan Timur", "juru parkir resmi selama 1 tahun", R.drawable.juruparkir);
+        simpanDataJuru("Andi", "Jeruk, Kec. Medan Barat", "juru parkir resmi selama 8 bulan", R.drawable.juruparkir);
+        simpanDataJuru("Tono", "Apel, Kec. Medan Perjuangan", "juru parkir resmi selam 2 tahun", R.drawable.juruparkir);
+        simpanDataJuru("Yanto", "Longan, Kec. Medan Kota", "juru perkir resmi selama 5 bulan", R.drawable.juruparkir);
 
-        simpanDataJuru("Asep", "Durian, Kec. Medan Denai", R.drawable.juruparkir);
-        simpanDataJuru("Agus", "Salak, Kec. Medan Deli", R.drawable.juruparkir);
-        simpanDataJuru("Abeng", "Papaya, Kec. Medan Area", R.drawable.juruparkir);
-        simpanDataJuru("Jamal", "Pear, Kec. Medan Kota", R.drawable.juruparkir);
+        simpanDataJuru("Asep", "Durian, Kec. Medan Denai", "juru parkir resmi selama 1 bulan", R.drawable.juruparkir);
+        simpanDataJuru("Agus", "Salak, Kec. Medan Deli", "juru parkir resmi selama 10 bulan", R.drawable.juruparkir);
+        simpanDataJuru("Abeng", "Papaya, Kec. Medan Area", "juru parkir resmi selama 2 tahun", R.drawable.juruparkir);
+        simpanDataJuru("Jamal", "Pear, Kec. Medan Kota", "juru parkie resmi selama 1.5 tahun", R.drawable.juruparkir);
     }
 
-    public void simpanDataJuru(String NamaJuru, String DaerahJuru, int gambarJuru) {
+    public void simpanDataJuru(String NamaJuru, String DaerahJuru, String DesJuru , int gambarJuru) {
         Realm realm = Realm.getDefaultInstance();
 
         // Menyimpan Data
@@ -83,6 +83,7 @@ public class JuruParkir extends AppCompatActivity {
             DataTP dataTP = realm1.createObject(DataTP.class);
             dataTP.setNamaJuru(NamaJuru);
             dataTP.setDaerahJuru(DaerahJuru);
+            dataTP.setDesJuru(DesJuru);
             dataTP.setGambarJuru(gambarJuru);
         });
 

@@ -13,10 +13,13 @@
         android:theme="@style/Theme.NoPungLi"
         tools:targetApi="28">
         <activity
+            android:name=".Result"
+            android:exported="false" />
+        <activity
             android:name=".Topup2"
             android:exported="false" />
         <activity
-            android:name=".transfer2"
+            android:name=".Transfer2"
             android:exported="false" />
         <activity
             android:name=".Transfer1"
@@ -40,7 +43,7 @@
             android:name=".Map"
             android:exported="false" />
         <activity
-            android:name=".Inbox"
+            android:name=".Notif"
             android:exported="false" />
         <activity
             android:name=".Home"

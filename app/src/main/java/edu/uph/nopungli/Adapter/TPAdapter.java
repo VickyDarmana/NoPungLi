@@ -28,7 +28,7 @@ public class TPAdapter extends ArrayAdapter<DataTP> {
 
     private static class MyViewHolder {
         ImageView gambarJuru;
-        TextView txtNamaJuru, txtDaerahJuru;
+        TextView txtNamaJuru, txtDaerahJuru, txtDeskripsiJuru;
     }
 
     @Override
@@ -46,6 +46,7 @@ public class TPAdapter extends ArrayAdapter<DataTP> {
             myViewHolder.gambarJuru = (ImageView) convertView.findViewById(R.id.gambarJuru);
             myViewHolder.txtNamaJuru = (TextView) convertView.findViewById(R.id.txtNamaJuru);
             myViewHolder.txtDaerahJuru = (TextView) convertView.findViewById(R.id.txtDaerahJuru);
+            myViewHolder.txtDeskripsiJuru = (TextView) convertView.findViewById(R.id.txtDeskripsiJuru);
 
             convertView.setTag(myViewHolder);
         }
@@ -57,6 +58,7 @@ public class TPAdapter extends ArrayAdapter<DataTP> {
         myViewHolder.gambarJuru.setImageResource(dataTP.getGambarJuru());
         myViewHolder.txtNamaJuru.setText(dataTP.getNamaJuru());
         myViewHolder.txtDaerahJuru.setText("Daerah: Jln. " + dataTP.getDaerahJuru());
+        myViewHolder.txtDeskripsiJuru.setText("Deskripsi: Telah menjadi " +dataTP.getDesJuru());
 
         return result;
     }
