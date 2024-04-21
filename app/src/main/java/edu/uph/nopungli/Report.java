@@ -61,7 +61,6 @@ public class Report extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
     public void tambahDataReport(String Nama, String NoTelp, String Kota, String Kecamatan, String Keluhan) {
         Realm realm = Realm.getDefaultInstance();
