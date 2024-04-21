@@ -113,17 +113,17 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="193dp"
+            android:layout_height="99dp"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView27"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="5pt"
                 android:layout_marginTop="5pt"
-                android:text="4 April 2024"
                 android:background="@color/orange"
+                android:paddingLeft="5pt"
+                android:text="4 April 2024"
                 android:textColor="@color/black"
                 android:textStyle="bold" />
 
@@ -132,20 +132,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5pt"
-                android:layout_marginRight="5pt"
                 android:layout_marginTop="4pt"
-                android:textColor="@color/black"
-                android:text="Foto pelaporan berhasil di upload" />
+                android:layout_marginRight="5pt"
+                android:text="Foto pelaporan berhasil di upload"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/textView29"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5pt"
-                android:layout_marginRight="5pt"
                 android:layout_marginTop="4pt"
-                android:textColor="@color/black"
-                android:text="Pelaporan terhadap juru parkir berhasil" />
+                android:layout_marginRight="5pt"
+                android:text="Pelaporan terhadap juru parkir berhasil"
+                android:textColor="@color/black" />
 
         </LinearLayout>
     </LinearLayout>
