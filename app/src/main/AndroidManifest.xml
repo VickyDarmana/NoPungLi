@@ -13,6 +13,9 @@
         android:theme="@style/Theme.NoPungLi"
         tools:targetApi="28">
         <activity
+            android:name=".transfer2"
+            android:exported="false" />
+        <activity
             android:name=".Transfer1"
             android:exported="false" />
         <activity
