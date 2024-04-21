@@ -16,8 +16,19 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="85dp"
+            android:layout_height="101dp"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15pt"
+                android:text="Transfer Successful"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:textSize="17pt"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -36,20 +47,35 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="124dp"
+            android:layout_height="121dp"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView44"
+                android:id="@+id/textView53"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10pt"
-                android:text="Transfer Successful"
-                android:textAlignment="center"
-                android:textColor="@color/green"
-                android:textSize="17pt"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textSize="9pt"
+                android:layout_marginLeft="15pt"
+                android:text="Amount:       Rp.50.000" />
 
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="9pt"
+                android:layout_marginLeft="15pt"
+                android:text="Receipt no:  W031593163"/>
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="9pt"
+                android:layout_marginLeft="15pt"
+                android:text="Date:             20 April 2024 16.40 PM"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
