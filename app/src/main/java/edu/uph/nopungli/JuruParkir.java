@@ -41,7 +41,6 @@ public class JuruParkir extends AppCompatActivity {
 
         initRealm();
 
-
         listview2 = (ListView) findViewById(R.id.listview2);
         dataTPArrayList = new ArrayList<>();
         dataTPArrayList = getAllDataTP();

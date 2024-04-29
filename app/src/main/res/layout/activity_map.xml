@@ -39,7 +39,6 @@
                 android:textColor="@color/black"
                 android:textSize="13pt"
                 android:textStyle="bold" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -47,10 +46,11 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <com.google.android.gms.maps.MapView
-                android:id="@+id/mapView"
+            <ImageView
+                android:id="@+id/imageView8"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/peta" />
         </LinearLayout>
 
     </LinearLayout>
